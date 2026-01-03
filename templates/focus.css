@@ -1,40 +1,41 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 
-.main{
+.main {
     height: 100vh;
     width: 100%;
     background-color: #f2f2f2;
     background-image: url('image.jpg');
     background-size: cover;
-    background-position: center;    
+    background-position: center;
     text-align: center;
 
 }
 
 
 
-.navbar{
+.navbar {
     width: 100px;
     height: 80px;
-    float:left;
+    float: left;
     margin: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 
 }
 
-.icon{
+.icon {
     width: 50px;
     height: 50px;
     background-image: url('icon.png');
     background-size: cover;
     background-position: center;
 }
-.logo{
+
+.logo {
 
     font-size: 35px;
     white-space: nowrap;
@@ -45,7 +46,8 @@
     margin-left: 10px;
 
 }
-.tagline{
+
+.tagline {
 
     font-size: 20px;
     white-space: nowrap;
@@ -56,5 +58,5 @@
     text-align: center;
 
 
-    
+
 }
