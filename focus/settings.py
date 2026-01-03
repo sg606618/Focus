@@ -1,7 +1,9 @@
 from pathlib import Path
+import os
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 SECRET_KEY = 'django-insecure-aeu&38!x&(ov=6hz8^pm3825i24ngund@r1baj5)-#_qc)bvzb'
 
@@ -17,9 +19,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+
+    # Custom Apps....
     'tailwind',
     'theme',
-    # 'django_browser_reload',
+    'landingpage',
 ]
 
 MIDDLEWARE = [
@@ -37,7 +42,7 @@ ROOT_URLCONF = 'focus.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR, ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

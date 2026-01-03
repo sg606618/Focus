@@ -1,10 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include 
 from django.conf import settings
+from landingpage.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('focus_app.urls')),
-    path('/home/', include('focus_app.urls')),
-    # path("__reload__/", include("django_browser_reload.urls")),
+    path('', include('landingpage.urls')),
 ]
