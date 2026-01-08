@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'tailwind',
     'theme',
     'landingpage',
+    'signin',
 ]
 
 MIDDLEWARE = [
@@ -88,7 +89,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 TAILWIND_APP_NAME = 'theme'
 

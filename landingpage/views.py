@@ -7,3 +7,7 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'landingpage/index.html')
+
+def home(req):
+    # return HttpResponse("This is home page")
+    return render(req, 'landingpage/home.html')
