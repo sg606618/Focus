@@ -6,28 +6,37 @@
 <form action="" method="post">
   {% csrf_token %}
 
-  <div class="name-row">
-    <div class="form-group">
-      <label for="FirstName">First Name:</label>
-      <input type="text" id="FirstName" name="firstname" required />
+  <div class="form-container">
+    <div class="name-container">
+      <div>
+        <div class="firstname">
+          <label for="FirstName">First Name:</label>
+          <input type="text" id="FirstName" name="firstname" required />
+        </div>
+        <div class="lastname">
+          <label for="LastName">Last Name:</label>
+          <input type="text" id="LastName" name="lastname" required />
+        </div>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label for="LastName">Last Name:</label>
-      <input type="text" id="LastName" name="lastname" required />
+    <div class="username">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
     </div>
+
+    <div class="email">
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="password">
+      <label for="Password">Password:</label>
+      <input type="password" id="Password" name="password" required />
+    </div>
+
+    <input type="submit" value="Sign In" />
   </div>
-
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username" required /><br /><br />
-
-  <label for="email">Email ID:</label>
-  <input type="email" id="email" name="email" required /><br /><br />
-
-  <label for="Password">Password:</label>
-  <input type="password" id="Password" name="password" required /><br /><br />
-
-  <input type="submit" value="Sign In" />
 </form>
 
 {% endblock %}
